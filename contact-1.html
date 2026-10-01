@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Devign Digital</title>
+  <meta name="description" content="Start a website project with Devign Digital. Tell us about your business and we'll get back to you." />
+  <link rel="canonical" href="https://devigndigital.co.za/contact.html" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%2315140F'/%3E%3Ctext x='50' y='68' font-size='60' fill='%23F3EEE3' text-anchor='middle' font-family='Georgia,serif'%3ED%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap nav">
+      <a href="index.html" class="wordmark">Devign Digital</a>
+      <ul class="nav-links">
+        <li><a href="work.html">Work</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-solid nav-cta">Start a project</a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-panel">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-panel" id="mobile-panel">
+      <a href="work.html">Work</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="wrap">
+        <h1>Start a project</h1>
+        <p>Tell us about your business and what you need. We'll reply directly — usually within a few hours.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap contact-grid">
+
+        <form id="contact-form" novalidate>
+          <div class="field">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" required autocomplete="name" />
+          </div>
+          <div class="field">
+            <label for="business">Business name</label>
+            <input type="text" id="business" name="business" required autocomplete="organization" />
+          </div>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" required autocomplete="email" />
+          </div>
+          <div class="field">
+            <label for="type">Project type</label>
+            <select id="type" name="type" required>
+              <option value="">Select one</option>
+              <option value="New business website">New business website</option>
+              <option value="Landing page">Landing page</option>
+              <option value="Website redesign">Website redesign</option>
+              <option value="Ongoing updates">Ongoing updates</option>
+              <option value="Not sure yet">Not sure yet</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Tell us about your business</label>
+            <textarea id="message" name="message" required placeholder="What do you do, and what do you need the website to help with?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-solid">Send message</button>
+          <p class="form-note">This opens your email app with the message pre-filled, addressed to Devign Digital. Nothing is submitted until you send it.</p>
+        </form>
+
+        <div class="contact-info">
+          <h3>Prefer to reach out directly?</h3>
+          <p>Email us and we'll get back to you the same way — no forms required.</p>
+          <a class="direct" href="mailto:hello@devigndigital.co.za">hello@devigndigital.co.za</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="wordmark">Devign Digital</span>
+          <p>Websites designed and built for independent Johannesburg businesses.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Site</h4>
+          <ul>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html#websites">Business websites</a></li>
+            <li><a href="services.html#landing">Landing pages</a></li>
+            <li><a href="services.html#redesigns">Redesigns</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="contact.html">Start a project</a></li>
+            <li><a href="privacy.html">Privacy policy</a></li>
+            <li><a href="terms.html">Terms of service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Devign Digital, Johannesburg.</span>
+        <span>Designed and built by Devign Digital.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
