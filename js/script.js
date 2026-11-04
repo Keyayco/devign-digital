@@ -7,7 +7,6 @@
 
   document.addEventListener("DOMContentLoaded", () => {
     initMobileMenu();
-    initReveal();
     initContactForm();
   });
 
