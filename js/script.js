@@ -7,6 +7,8 @@
 
   document.addEventListener("DOMContentLoaded", () => {
     initMobileMenu();
+    initReveal();
+    initShots();
     initContactForm();
   });
 
@@ -26,6 +28,29 @@
         toggle.setAttribute("aria-expanded", "false");
       });
     });
+  }
+
+  /* Scale live iframes down so the whole page design is visible (no cropping or stretching) */
+  function initShots() {
+    const shots = document.querySelectorAll(".shot");
+    if (!shots.length) return;
+    const fit = () => shots.forEach((el) => {
+      const f = el.querySelector("iframe");
+      const cw = el.clientWidth, ch = el.clientHeight;
+      if (!f || !cw || !ch) return;
+      const base = parseInt(el.dataset.base, 10) || (cw < 520 ? 400 : 1280);
+      const s = cw / base;
+      f.style.width = base + "px";
+      f.style.height = ch / s + "px";
+      f.style.transform = "scale(" + s + ")";
+    });
+    fit();
+    if ("ResizeObserver" in window) {
+      const ro = new ResizeObserver(fit);
+      shots.forEach((el) => ro.observe(el));
+    } else {
+      window.addEventListener("resize", fit);
+    }
   }
 
   function initReveal() {
