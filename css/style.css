@@ -75,17 +75,13 @@ h1,h2,h3 { font-family:var(--font-display); font-weight:700; letter-spacing:-.02
 .hero { padding:var(--s7) 0 var(--s8); position:relative; overflow:hidden; isolation:isolate;
   background:
     linear-gradient(180deg, rgba(7,16,28,.78) 0%, rgba(7,16,28,.55) 45%, rgba(7,16,28,.9) 100%),
-    url(../assets/hero-sm.jpg) 70% center / cover no-repeat;
-  background:
-    linear-gradient(180deg, rgba(7,16,28,.78) 0%, rgba(7,16,28,.55) 45%, rgba(7,16,28,.9) 100%),
-    image-set(url(../assets/hero-sm.webp) type("image/webp"), url(../assets/hero-sm.jpg) type("image/jpeg")) 70% center / cover no-repeat; }
+    url("../assets/hero-sm.jpg") 70% center / cover no-repeat;
+  background-color:#07101C; }
 @media (min-width:960px){
   .hero { background:
     linear-gradient(90deg, rgba(7,16,28,.94) 0%, rgba(7,16,28,.72) 38%, rgba(7,16,28,.1) 75%),
-    url(../assets/hero.jpg) center / cover no-repeat;
-    background:
-    linear-gradient(90deg, rgba(7,16,28,.94) 0%, rgba(7,16,28,.72) 38%, rgba(7,16,28,.1) 75%),
-    image-set(url(../assets/hero.webp) type("image/webp"), url(../assets/hero.jpg) type("image/jpeg")) center / cover no-repeat; }
+    url("../assets/hero.jpg") center / cover no-repeat;
+    background-color:#07101C; }
 }
 .hero-grid { display:grid; gap:var(--s7); align-items:center; }
 .hero h1 { font-size:clamp(40px,9vw,80px); line-height:1.02; letter-spacing:-.03em; max-width:12ch; opacity:0; transform:translateY(16px); animation:rise .7s var(--ease) .05s forwards; }
