@@ -13,14 +13,14 @@
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230B1424'/%3E%3Ctext x='50' y='68' font-size='60' fill='%23F3EEE3' text-anchor='middle' font-family='Georgia,serif'%3ED%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
   <header class="site-header">
     <div class="wrap nav">
-      <a href="index.html" class="wordmark">Devign Digital</a>
+      <a href="index.html" class="wordmark"><b>Devign</b> Digital</a>
       <ul class="nav-links">
         <li><a href="work.html">Work</a></li>
         <li><a href="services.html">Services</a></li>
@@ -44,9 +44,9 @@
 
     <!-- HERO -->
     <section class="hero">
-      <div class="wrap hero-grid">
-        <div>
-          <h1>Websites built for businesses that want to be <span class="grad">taken seriously.</span></h1>
+      <div class="wrap">
+        <div class="hero-inner">
+          <h1>Websites built for businesses that want to be <span class="accent">taken seriously.</span></h1>
           <p class="hero-sub">Devign Digital designs and develops websites for independent businesses in Johannesburg. The kind of site that makes a customer trust you before they've even called.</p>
           <div class="hero-actions">
             <a href="work.html" class="btn btn-solid">View our work</a>
@@ -54,142 +54,110 @@
           </div>
           <p class="hero-status"><span class="dot" aria-hidden="true"></span>Currently building for cleaning, events and trades businesses across Johannesburg, one client at a time</p>
         </div>
-        <div class="hero-stage">
-          <div class="stage-block" aria-hidden="true"></div>
-          <div class="stage-browser">
-            <div class="shot" data-base="1280" style="position:absolute;inset:0"><iframe src="https://10footphansi.netlify.app" title="10 Foot Phansi preview" loading="lazy" tabindex="-1" sandbox="allow-scripts allow-same-origin"></iframe></div>
-          </div>
-          <div class="device">
-            <div class="shot" data-base="390"><iframe src="https://keyayco.github.io/sophumela/" title="Sophumela on mobile" loading="lazy" tabindex="-1" sandbox="allow-scripts allow-same-origin"></iframe></div>
-          </div>
-          <span class="stage-chip c1">Live sites</span>
-          <span class="stage-chip c2">Mobile first</span>
-        </div>
       </div>
     </section>
 
-    <div class="ticker" aria-hidden="true">
-      <div class="ticker-track"><span>Web design</span><span>/</span><span>Development</span><span>/</span><span>Redesigns</span><span>/</span><span>Landing pages</span><span>/</span><span>Ongoing updates</span><span>/</span><span>Web design</span><span>/</span><span>Development</span><span>/</span><span>Redesigns</span><span>/</span><span>Landing pages</span><span>/</span><span>Ongoing updates</span><span>/</span></div>
-    </div>
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="wrap split">
+        <div class="sec-intro">
+          <div class="eyebrow">Our services</div>
+          <h2>What we do</h2>
+          <p>From a single page to a full multi-page site, built around your business.</p>
+          <a class="text-link" href="services.html">See all services &rarr;</a>
+        </div>
+        <div class="svc-grid">
+          <div class="svc-card"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg><h3>Business websites</h3><p>A site that explains what you do, who you serve, and how to reach you. Built to be found and trusted.</p></div>
+          <div class="svc-card"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg><h3>Landing pages</h3><p>One focused page for a single offer, campaign or launch, built to move a visitor toward one action.</p></div>
+          <div class="svc-card"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.3-5.7M20 4v5h-5"/></svg><h3>Redesigns</h3><p>Already have a site that isn't working? We rebuild it around what your business actually needs.</p></div>
+          <div class="svc-card"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/></svg><h3>Ongoing updates</h3><p>Once a site is live, things change. We handle updates directly so the site stays accurate.</p></div>
+        </div>
+      </div>
+    </section>
 
     <!-- SELECTED WORK -->
-    <section class="section section-border-top" id="work">
-      <div class="wrap">
-        <div class="section-head">
+    <section class="section" id="work">
+      <div class="wrap split">
+        <div class="sec-intro">
+          <div class="eyebrow">Our work</div>
           <h2>Selected work</h2>
           <p>Live sites, built and shipped for real businesses.</p>
+          <a class="text-link" href="work.html">View all work &rarr;</a>
         </div>
-
         <div class="case-grid">
-
-          <div class="case" style="--c:var(--gold)">
+          <article class="case">
             <div class="case-media">
-              <div class="case-frame-wrap shot">
-                <iframe src="https://keyayco.github.io/sophumela/" title="Sophumela site preview" loading="lazy" sandbox="allow-scripts allow-same-origin"></iframe>
+              <div class="case-frame-wrap shot" data-base="1280">
+                <iframe src="https://keyayco.github.io/sophumela/" title="Sophumela site preview" loading="lazy" tabindex="-1" sandbox="allow-scripts allow-same-origin"></iframe>
               </div>
-              <a class="case-view" href="https://keyayco.github.io/sophumela/" target="_blank" rel="noopener">View live</a>
             </div>
-            <div class="case-meta-row"><span>01 / Web Design</span><span>2026</span></div>
             <div class="case-body">
-              <h3><a href="https://keyayco.github.io/sophumela/" target="_blank" rel="noopener">Sophumela</a></h3>
-              <p>Cleaning services, Johannesburg</p>
+              <div>
+                <h3><a href="https://keyayco.github.io/sophumela/" target="_blank" rel="noopener">Sophumela</a></h3>
+                <p>Cleaning services, Johannesburg</p>
+              </div>
+              <span class="case-arrow" aria-hidden="true">&rarr;</span>
             </div>
-          </div>
-
-          <div class="case" style="--c:var(--copper)">
+          </article>
+          <article class="case">
             <div class="case-media">
-              <div class="case-frame-wrap shot">
-                <iframe src="https://10footphansi.netlify.app" title="10 Foot Phansi site preview" loading="lazy" sandbox="allow-scripts allow-same-origin"></iframe>
+              <div class="case-frame-wrap shot" data-base="1280">
+                <iframe src="https://10footphansi.netlify.app" title="10 Foot Phansi site preview" loading="lazy" tabindex="-1" sandbox="allow-scripts allow-same-origin"></iframe>
               </div>
-              <a class="case-view" href="https://10footphansi.netlify.app" target="_blank" rel="noopener">View live</a>
             </div>
-            <div class="case-meta-row"><span>02 / Web Design</span><span>2026</span></div>
             <div class="case-body">
-              <h3><a href="https://10footphansi.netlify.app" target="_blank" rel="noopener">10 Foot Phansi</a></h3>
-              <p>Events &amp; hospitality, Johannesburg</p>
+              <div>
+                <h3><a href="https://10footphansi.netlify.app" target="_blank" rel="noopener">10 Foot Phansi</a></h3>
+                <p>Events &amp; hospitality, Johannesburg</p>
+              </div>
+              <span class="case-arrow" aria-hidden="true">&rarr;</span>
             </div>
-          </div>
-
-          <div class="case" style="--c:var(--blue);--cf:#fff;--ct:var(--blue-text)">
+          </article>
+          <article class="case">
             <div class="case-media">
-              <div class="case-frame-wrap shot">
-                <iframe src="https://keyayco.github.io/nchitsva-enterprizes/" title="Nchitsva Enterprizes site preview" loading="lazy" sandbox="allow-scripts allow-same-origin"></iframe>
+              <div class="case-frame-wrap shot" data-base="1280">
+                <iframe src="https://keyayco.github.io/nchitsva-enterprizes/" title="Nchitsva Enterprizes site preview" loading="lazy" tabindex="-1" sandbox="allow-scripts allow-same-origin"></iframe>
               </div>
-              <a class="case-view" href="https://keyayco.github.io/nchitsva-enterprizes/" target="_blank" rel="noopener">View live</a>
             </div>
-            <div class="case-meta-row"><span>03 / Web Design</span><span>2026</span></div>
             <div class="case-body">
-              <h3><a href="https://keyayco.github.io/nchitsva-enterprizes/" target="_blank" rel="noopener">Nchitsva Enterprizes</a></h3>
-              <p>Professional services, Johannesburg</p>
+              <div>
+                <h3><a href="https://keyayco.github.io/nchitsva-enterprizes/" target="_blank" rel="noopener">Nchitsva Enterprizes</a></h3>
+                <p>Professional services, Johannesburg</p>
+              </div>
+              <span class="case-arrow" aria-hidden="true">&rarr;</span>
             </div>
-          </div></div>
-      </div>
-    </section>
-
-    <!-- SERVICES OVERVIEW -->
-    <section class="section section-border-top">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>What we do</h2>
-          <p><a href="services.html" style="text-decoration:underline;">See all services →</a></p>
-        </div>
-        <div class="service-row" style="--c:var(--blue)">
-          <span class="service-index">01</span>
-          <h3>Business websites</h3>
-          <p>A site that explains what you do, who you serve, and how to reach you. Built to be found and trusted.</p>
-        </div>
-        <div class="service-row" style="--c:var(--ice)">
-          <span class="service-index">02</span>
-          <h3>Landing pages</h3>
-          <p>One focused page for a single offer, campaign or launch, built to move a visitor toward one action.</p>
-        </div>
-        <div class="service-row" style="--c:var(--copper)">
-          <span class="service-index">03</span>
-          <h3>Redesigns</h3>
-          <p>Already have a site that isn't working? We rebuild it around what your business actually needs.</p>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- PROCESS -->
-    <section class="section section-border-top">
-      <div class="wrap">
-        <div class="section-head">
+    <section class="section" id="process">
+      <div class="wrap split">
+        <div class="sec-intro">
+          <div class="eyebrow">Our process</div>
           <h2>How we work</h2>
           <p>Four stages, start to launch.</p>
         </div>
-        <div class="process-grid">
-          <div class="process-step">
-            <span class="step-num">01</span>
-            <h3>Discover</h3>
-            <p>We talk through your business, your customers, and what the site needs to do for you.</p>
-          </div>
-          <div class="process-step">
-            <span class="step-num">02</span>
-            <h3>Design</h3>
-            <p>A layout and look built for your business specifically, not a template with your logo dropped in.</p>
-          </div>
-          <div class="process-step">
-            <span class="step-num">03</span>
-            <h3>Build</h3>
-            <p>The design becomes a real, working site: fast, responsive, and easy for you to update.</p>
-          </div>
-          <div class="process-step">
-            <span class="step-num">04</span>
-            <h3>Launch</h3>
-            <p>We publish the site, connect your domain, and make sure everything works before you share it.</p>
-          </div>
+        <div class="steps">
+          <div class="step"><div class="step-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg></div><h3><span class="n">01</span>Discover</h3><p>We talk through your business, your customers, and what the site needs to do for you.</p></div>
+          <div class="step"><div class="step-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1-4L16 5l3 3L8 19zM14 7l3 3"/></svg></div><h3><span class="n">02</span>Design</h3><p>A layout and look built for your business specifically, not a template with your logo dropped in.</p></div>
+          <div class="step"><div class="step-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></div><h3><span class="n">03</span>Build</h3><p>The design becomes a real, working site: fast, responsive, and easy for you to update.</p></div>
+          <div class="step"><div class="step-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg></div><h3><span class="n">04</span>Launch</h3><p>We publish the site, connect your domain, and make sure everything works before you share it.</p></div>
         </div>
       </div>
     </section>
 
     <!-- WHY DEVIGN -->
-    <section class="section section-border-top">
-      <div class="wrap">
-        <div class="section-head">
+    <section class="section" id="why">
+      <div class="wrap split">
+        <div class="sec-intro">
+          <div class="eyebrow">Why Devign</div>
           <h2>Why Devign</h2>
+          <p>One person, working directly with you.</p>
+          <a class="text-link" href="about.html">About Devign &rarr;</a>
         </div>
-        <div class="prose">
+        <div class="why-panel">
           <p>Devign Digital is one person, building websites directly for the businesses that use them.</p>
           <p>There's no account manager between you and the work, and no template being resold with a new coat of paint. Every project starts from what your business actually does, and gets built around that.</p>
           <p>That means slower growth than a bigger agency, and a lot more attention on each site that goes out.</p>
@@ -197,7 +165,7 @@
       </div>
     </section>
 
-    <!-- FINAL CTA -->
+    <!-- CTA -->
     <section class="cta-band">
       <div class="wrap">
         <h2>Have a business that needs a better website?</h2>
@@ -210,39 +178,23 @@
 
   <footer class="site-footer">
     <div class="wrap">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <span class="wordmark">Devign Digital</span>
-          <p>Websites designed and built for independent Johannesburg businesses.</p>
-        </div>
-        <div class="footer-col">
-          <h4>Site</h4>
-          <ul>
-            <li><a href="work.html">Work</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="about.html">About</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="services.html#websites">Business websites</a></li>
-            <li><a href="services.html#landing">Landing pages</a></li>
-            <li><a href="services.html#redesigns">Redesigns</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <ul>
-            <li><a href="contact.html">Start a project</a></li>
-            <li><a href="privacy.html">Privacy policy</a></li>
-            <li><a href="terms.html">Terms of service</a></li>
-          </ul>
-        </div>
+      <div class="footer-top">
+        <a href="index.html" class="wordmark"><b>Devign</b> Digital</a>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="work.html">Work</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="privacy.html">Privacy policy</a>
+          <a href="terms.html">Terms of service</a>
+        </nav>
+        <a class="footer-mail" href="mailto:hello@devigndigital.co.za" aria-label="Email Devign Digital">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+        </a>
       </div>
       <div class="footer-bottom">
         <span>© 2026 Devign Digital, Johannesburg.</span>
-        <span>Designed and built by Devign Digital.</span>
+        <span class="tag">Design / Develop / Launch</span>
       </div>
     </div>
   </footer>
