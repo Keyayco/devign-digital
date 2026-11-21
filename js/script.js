@@ -54,7 +54,7 @@
   }
 
   function initReveal() {
-    const targets = document.querySelectorAll(".case, .service-row, .process-step, .section-head");
+    const targets = document.querySelectorAll(".case, .svc-card, .step, .service-row, .sec-intro, .why-panel");
     targets.forEach((el) => el.classList.add("reveal"));
 
     if (!("IntersectionObserver" in window)) {
