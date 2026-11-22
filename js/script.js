@@ -86,6 +86,7 @@
 
     form.addEventListener("submit", (e) => {
       e.preventDefault();
+      if (!form.checkValidity()) { form.reportValidity(); return; }
       const name = form.name.value.trim();
       const business = form.business.value.trim();
       const email = form.email.value.trim();
@@ -95,14 +96,15 @@
       const bodyLines = [
         `Name: ${name}`,
         `Business: ${business}`,
+        `Email: ${email}`,
         `Project type: ${type}`,
         "",
         message
       ];
 
-      const subject = encodeURIComponent(`New project enquiry — ${business || name}`);
+      const subject = encodeURIComponent(`New project enquiry: ${business || name}`);
       const body = encodeURIComponent(bodyLines.join("\n"));
-      const mailto = `mailto:hello@devigndigital.co.za?subject=${subject}&body=${body}&reply-to=${encodeURIComponent(email)}`;
+      const mailto = `mailto:infinitedevignstudios@gmail.com?subject=${subject}&body=${body}`;
 
       window.location.href = mailto;
     });
